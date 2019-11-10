@@ -22,9 +22,14 @@ for li in lis:
             print('wget',code_path)
             if ext=='.zip':
                 print('unzip',path)
+                print('rm',path)
             elif ext=='.gz':
                 print('gunzip',path)
-            print('rm',path)
+            print('git init')
+            print('git add *')
+            print('git commit -m"first commit"')
+            print('github-linguist > risultato.txt')
+            print('cd ..')
     i=i+1
 
 

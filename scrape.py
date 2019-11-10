@@ -15,8 +15,16 @@ for li in lis:
             folder_name = filename.replace('./','')
             code_path = path.replace('./',sys.argv[2])
             desc = li.text 
-            print(code_path,ext,folder_name)
-            print(desc)
+            #print(code_path,ext,folder_name)
+            #print(desc)
+            print('mkdir',folder_name)
+            print('cd',folder_name)
+            print('wget',code_path)
+            if ext=='.zip':
+                print('unzip',path)
+            elif ext=='.gz':
+                print('gunzip',path)
+            print('rm',path)
     i=i+1
 
 
